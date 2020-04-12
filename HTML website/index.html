@@ -1,0 +1,214 @@
+<!doctype>
+</doctype>
+<html>
+<head>
+<link rel="icon"type="Image.png"href="https://thumbs.dreamstime.com/t/html-css-coding-17431590.jpg"/>
+<link type="text/css"rel="stylesheet"href="neondark.css"/>
+<title> Coding </title>
+<style></style>
+<meta charset="utf-8"/>
+<script>
+function answer(){
+var radio = document.getElementsByName("trivia");
+var selection = false;
+var message = "";
+
+for( var i = 0; i < radio.length; i++) {
+if(radio[i].value == "kcr" && radio[i].checked == true) {
+selection = true;
+  } //end if statement
+} //end for loop
+
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>";
+} else {
+alert("Cool! Open it up and scroll down to start coding! ")
+}
+document.getElementById("response").innerHTML = message;
+
+ //end function answer
+} //end function answer
+
+	</script>
+</head>
+<body>
+<header id="banner"> HTML`</header>
+<ul id="navmenu">
+  <li class="navitem"> <a href="index.html">Home</a> </li>
+  <li class="navitem"> <a href="contact.html">Contact</a> </li>
+</ul>
+<h1> Coding in HTML </h1>
+<p> Coding can be a very useful skill.  This website will be a guide to making a basic html document. </p>
+<img src= "https://thumbs.dreamstime.com/t/html-css-coding-17431590.jpg"/>
+<p> Table of contents: </p>
+<ol>
+  <li> Downloading an IDE and suitable browser.</li>
+  <li> Basic HTML </li>
+  <li> CSS  </li>
+  <li> Other useful information </li>
+</ol>
+<hr/>
+<h3> Downloading an IDE </h3>
+<p> To code in HTML you need to download an Integrated Development Environment (IDE).  I use Atom.  Below is a list of the best IDE's. </p>
+<h3> Atom </h3>
+<p> Atom is a hackable text editor powered by <a href="https://github.com">GitHub.</a> Atom is compatible with HTML, CSS, Javascript and more. </p>
+<p> <img width="40%" src = "atomss.png"/> </p>
+<p> <a href="https://atom.io"> CLICK HERE to download Atom </a> </p>
+<h3> Sublime text </h3>
+<p> Sublime text is simple and easy to use.  It's used for HTML and Javascript. </p>
+<p> <img width="40%" src= "sublimess.png"/> </p>
+<a href="https://www.sublimetext.com"/> CLICK HERE to <strong> PURCHASE </strong> Sublime Text </a>
+<h3> Visual Studio & Visual studio Code </h3>
+<p> Visual studio and Visual studio code are microsoft developer products.  They work a multitude of languages including HTML, python, java , C, and C++. They are very powerful but hard to use. </p>
+<img width="40%" src="vsss.png"/>
+</p>
+<p> <a href="https://visualstudio.microsoft.com"> CLICK HERE to download Visual studio </a> </p>
+<p> <a href="https://code.visualstudio.com/"> CLICK HERE to download Visual studio code </a> </p>
+<p>Adobe Dreamweaver is an Adobe product. It's a <u>very</u> useful text editor but is also expensive. It has features like file finders, color pickers, and more.</p>
+<img src="dw.PNG"width="40%"height="45%"/>
+<p> <a href="https://www.adobe.com/products/dreamweaver/free-trial-download.html">CLICK HERE to start a free trial or PURCHASE Dreamweaver</a> </p>
+<p>The best browser for coders is firefox developer edition. It has a huge variety of developer tools,and is safe and secure.</p>
+<a href=https://www.mozilla.org/en-US/firefox/developer>CLICK HERE to downlaod firefox developer edition.</a>
+<h2> Question! </h2>
+<p> Which IDE did you choose? </p>
+<div class="wrap-trivia">
+  <form>
+    <div id="response"></div>
+    <input type="radio" name="trivia" value="cool! Open it up and scroll down tom start coding!">
+    Atom <br/>
+    <input type="radio" name="trivia" value="cool! Open it up and scroll down to start coding!">
+    Sublime <br/>
+    <input type="radio" name="trivia" value="cool! Open it up and scroll down to start coding!">
+    visual studio<br/>
+    <input type="radio" name="trivia" value="cool! Open it up and scroll down to start coding!">
+    Adobe Dreamweaver<br/>
+	  <div>
+    <input onclick="answer()" type = "button" value="Submit"id ="button">
+	  </div>
+  </form>
+</div>
+<hr>
+<h3>
+CODING!
+<h3>
+<p> It's time for you to get coding! Below is an intro video. </p>
+<video width="400" height="220" controls >
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video. </video>
+<h3> Getting Started </h3>
+<p> Put the nescassary starter code into your IDE. </p>
+<p> <img src="ss.png">
+<p> You'll need more tags to create a good website. Below is a guide to some useful tags. </p>
+<h3> HTML TAGS </h3>
+<h3> ESSENTIAL TAGS </h3>
+<p> HTML:
+  The html tag starts the code.It's at the beginning of every HTML document. </p>
+<p> HEAD:The head holds other tags that define the whole website such as style , script , and link tags. </p>
+<p> TITLE:The title tag is the title of the website.  It will appear on the browser tab. </p>
+<p> BODY:The body tag holds all the content of the website </p>
+<h3> OTHER TAGS </h3>
+<p> P(PARAGRAPH): The p tag goes in the body tag.  It contains text that should appear as a paragraph onscreen. </p>
+<p> IMG(IMAGE): The img tag is used to describe an image on the page.  It's src(source) attribute contains the URL of the image. Image code looks like this: </p>
+<p> <img src=img.png/> </p>
+<p> ".jpg" means it's a jpeg file. You can either have jpeg, png, or gif files. </p>
+<p> <a href="https://www.stockfreeimages.com/">CLICK HERE to get some images for your website!</a> </p>
+<p> A: a (anchor) tags create a link. Links look like this: <a href="https://simplycoding.org/"> CLICK HERE to go to my favorite website.</a> </p>
+<p> The code is written like this: </p>
+<p> <img src="sos.png"/> </p>
+<p> The anchor tag's "href" attribute points to the URL of the website you want. </p>
+<p> h1-h6: H (header) tags , are exactly what they sound like:headers. H1 is the biggest. They get smaller from there. </p>
+<p> BR: br (border) tags tell the browser to start a new line. It's a single tag which means it has a slash at the end and no closing tag. </p>
+<p> DIV: div (divide) tags are containers for all HTML elements that can be styled as a group. This tag displays elements on a new line. </p>
+<hr/>
+<h3> Practice! </h3>
+<p> Your going to create your first HTML document! </p>
+<li> Put a paragraph tag in between the body tags. Add some text in between the paragraph tags.</li>
+<li> Make another paragraph tag , but this time put an Image tag inbetween them.</li>
+<li>Choose an image you like , right click and press copy image location.</li>
+<li> Paste it in the quotation marks of the src attribute.</li>
+<li> Make anaother paragraph tag and put an anchor tag inside of it.</li>
+<li> Call it "my favorite website".</li>
+<li> Save the file.</li>
+<li>Once you've saved the file right click and press open in explorer. Once it takes you there open it.</li>
+<p> Your finished code should look like this: </p>
+<p> <img src="sas.png"/> </p>
+<h3> More Tags </h3>
+<p> HR: hr (horizontal) tags create horizontal lines. </p>
+<p> LI: li (list) tags create lists. </p>
+<p> LINK: link tags can link to websites and css files. They go inside the head tag. </p>
+<p> SPAN:Span tags are like div tags, but can be indivdualy styled. </p>
+<p> VIDEO: video tags allow you to add videos into your website. They have width, height, and control attributes. </p>
+<p> Video code looks like this: </p>
+<p> <img src ="sis.png"/>
+<p> The source tag points to the video. Because some browsers have trouble reading the video code, they made that text fix it. </p>
+<p> AUDIO:Audio puts mp3 files into yoyr website. It has a control attribute. </p>
+<p> The code looks like this: </p>
+<p> <img src="mis.png"/> </p>
+<audio width="400" height="220" controls >
+  <source src="Thunderstruck.mp3" type="audio/mpeg">
+  Your browser does not support HTML 5 audio. </audio>
+<p> FORM:A form tag contains input elements that allow the user to enter data. </p>
+<p> INPUT:The input tag specifies a field where the user can enter data. They are used inside the form tag. There are 4 types of input: </p>
+<p> <img src="mas.png"/> </p>
+<p> Input type text creates an area where the user types in text. </p>
+<p> Input type radio looks like a fill in the bubble. It's given the name attribute so the user can only pick one answer. If you give one a different name than the other, then you will be able to pick both of them. </p>
+<p> Input type button creates a button. It's value is the text displayed on the button. You can also use a button tag to make a button. </p>
+	<hr/>
+<h3>CSS</h3>
+<p>CSS is how you style HTML documents. It's used for things like colors, backgrounds, and more. </p>
+<svg width="400" height="110">
+  <rect width="300" height="60" style="fill:black;stroke-width:3;stroke:purple"/>
+  <text fill="cyan"font-size="30"font-family="sans-serif"border-radius="10" x="105"y="40">
+	CSS
+</text>
+</svg>
+<p> There are three types of CSS:</p>
+<li>Inline Styling</li>
+	<li>Internal Styling</li>
+	<li>External Styling</li>
+<p>Inline Styling can be used when you add any tag a style attribute. Below is an example.</p>
+	<p><img src="css.PNG"/></p>
+<p>Internal styling is used inside a style tag. A style tag goes into the head tag. All internal css looks like this:</p>
+	<P><img src="cssi.PNG"/></P>
+	<p>You state the name of the tag,and then put some curly brackets. You put the CSS code in the brackets.</p>
+<P>External styling requires a single CSS document. NO HTML. You get the CSS into your website by using a link tag. below is an example:</P>
+	<P><img src="csse.png" /></P>
+	<p>Below is an example of a CSS file.</p>
+	<P><img src="csse2.PNG"/></P>
+	<h3>CSS Properties</h3>
+	<P>I'm just going to go over the basic CSS properties. There are hundreds of CSS properties. At the end, theres a link where you'll be able to download your own CSS cheatsheet. </P>
+	<P>All CSS properties start with the name of the property,a colin and then the number of pixels or the color,and a semi-colin</P>
+	<P> Below is a list of some CSS properties.</P>
+	<li>color:defines the color of the text.</li>
+	<li>background color: defines the background color of any tag.</li>
+	<li>border-radius:defines how round a rectangular shape is on the edges, with a number of pixels(px).</li>
+	<li>font-size:defines the size of the text, with a number of pixels.</li>
+	<li>font-weight:defines the the weight of the font. For example, font-weight:bold;.</li>
+	<li>font-family:defines the font type. Some text editors have more fonts than others. The one with the most fonts is Adobe Dreamwaver.</li>
+	<li>margin:defines the space between the borders of two HTML elements.</li>
+	<li>padding:defines the space between the border of an element.</li><br/>
+	<div>
+	<a href="https://websitesetup.org/css3-cheat-sheet/">CLICK HERE to download a CSS cheatsheet.</a>
+	</div>
+	<hr/>
+	<h3>Other usrful information</h3>
+  <p> Below is some other useful information. It will dicuss sources, favicons and more.</p>
+  <h3>Favicons</h3>
+  <p>Favicons are the icons you see on the browser tab. They are created with a link to an Image.</p>
+    <p>Below is the code.</p>
+  <p>
+    <img src="link.png"/>
+  </p>
+<hr/>
+<h3>Sources</h3>
+<p> There are many sources, such as websites and books. Below are 3 sources.</p>
+<li>Simply Coding</li>
+<li>w3schools</li>
+<li>Step by step coding</li>
+<div>
+<p><a href="https://simplycoding.org/"> CLICK HERE to go to simply coding</a></p>
+<p><a href="https://www.w3schools.com/">CLICK HERE to go to w3schools</a></p>
+<p><a href="https://www.barnesandnoble.com/w/beginners-step-by-step-coding-course-dk/1130951708?ean=9781465482211">CLICK HERE to purchase step-by-step coding course from <a href="https://www.barnesandnoble.com/"> barnes and noble bookstore.</p>
+</div>
+	</body>
+</html>
